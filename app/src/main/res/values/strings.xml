@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Title for the application. [CHAR LIMIT = 12] -->
+    <string name="app_name">Nicaragua</string>
+
+    <!-- Category name for phrases [CHAR LIMIT = 20] -->
+    <string name="category_regions">Regions</string>
+
+    <!-- Category name for the vocabulary words for colors [CHAR LIMIT = 20] -->
+    <string name="category_culture">Culture</string>
+
+    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT = 20] -->
+    <string name="category_volcanoes">Volcanoes</string>
+
+    <!-- Category name for the vocabulary words for family members [CHAR LIMIT = 20] -->
+    <string name="category_surfing">Surfing</string>
+    <string name="dialog_title">Welcome to the Nicaragua Tour Guide!</string>
+    <string name="dialog_description">Please click each picture for more information.</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingStart="6dp"
+    android:paddingEnd="6dp" >
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        tools:src="@drawable/nicaragua" />
+
+    <TextView
+        android:id="@+id/grid_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        android:background="@color/colorTransparent"
+        tools:fontFamily="@font/adamina"
+        tools:text="Title String" />
+
+    <TextView
+        android:id="@+id/grid_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/grid_image"
+        android:background="@color/colorTransparent"
+        android:gravity="right"
+        android:padding="12sp"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        tools:fontFamily="@font/adamina"
+        tools:text="Description string\nWill have between two\nOr three rows" />
+
+</RelativeLayout>
