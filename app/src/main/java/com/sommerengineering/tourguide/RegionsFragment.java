@@ -10,14 +10,12 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple fragment subclass.
  */
 public class RegionsFragment extends Fragment {
-
-    // create ArrayList of Location objects
-    private ArrayList<Location> locations = new ArrayList<>();
 
     // empty constructor
     public RegionsFragment() {}
@@ -25,19 +23,23 @@ public class RegionsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        // create ArrayList of custom Location objects
+        // when declaring variable it is best practice to use the interface rather than the implementation of the interface
+        List<Location> locations = new ArrayList<>();
+
         // inflate GridView in location_grid
         View rootView = inflater.inflate(R.layout.location_grid, container, false);
 
         // add Location objects to the ArrayList
-        locations.add(new Location("Granada", "Colonial architecture\nMombacho volcano\nNearby islands", R.drawable.granada));
-        locations.add(new Location("Ometepe Island", "Ojo de Agua pools\nConcepcion volcano\nMaderas volcano\nSanto Domingo Beach", R.drawable.ometepe));
-        locations.add(new Location("San Juan del Sur", "La Flor Nature Reserve\nClifftop statue of Christ\nMaderas Beach", R.drawable.san_juan));
-        locations.add(new Location("Managua", "Capital of Nicaragua\nStatue of Sandino\nMasaya volcano", R.drawable.managua));
-        locations.add(new Location("Lake Nicaragua", "Kayaking\nFishing\nOmetepe Island", R.drawable.lake_nicaragua));
-        locations.add(new Location("Corn Islands", "Scuba diving\nSnorkeling\nGolfing", R.drawable.corn_islands));
-        locations.add(new Location("Matagalpa", "Nature reserves\nEco lodges\nWaterfalls", R.drawable.matagalpa));
-        locations.add(new Location("Tipitapa", "Hot springs\nHistorical sites\nRivers", R.drawable.tipitapa));
-        locations.add(new Location("Diriamba", "Eco lodges\nWaterfalls\nBeaches", R.drawable.diriamba));
+        locations.add(new Location(getString(R.string.regions_granada_title), getString(R.string.regions_granada_description), R.drawable.granada));
+        locations.add(new Location(getString(R.string.regions_ometepe_title), getString(R.string.regions_ometepe_description), R.drawable.ometepe));
+        locations.add(new Location(getString(R.string.regions_san_juan_title), getString(R.string.regions_san_juan_description), R.drawable.san_juan));
+        locations.add(new Location(getString(R.string.regions_managua_title), getString(R.string.regions_managua_description), R.drawable.managua));
+        locations.add(new Location(getString(R.string.regions_lake_title), getString(R.string.regions_lake_description), R.drawable.lake_nicaragua));
+        locations.add(new Location(getString(R.string.regions_corn_title), getString(R.string.regions_corn_description), R.drawable.corn_islands));
+        locations.add(new Location(getString(R.string.regions_matagalpa_title), getString(R.string.regions_matagalpa_description), R.drawable.matagalpa));
+        locations.add(new Location(getString(R.string.regions_tipitapa_title), getString(R.string.regions_tipitapa_descriptions), R.drawable.tipitapa));
+        locations.add(new Location(getString(R.string.regions_diriamba_title), getString(R.string.regions_diriamba_description), R.drawable.diriamba));
 
         // create custom adapter that uses Location objects to populate and inflate grid_item layouts
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);

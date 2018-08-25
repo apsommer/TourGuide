@@ -10,14 +10,12 @@ import android.support.v4.app.Fragment;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple fragment subclass.
  */
 public class CultureFragment extends Fragment {
-
-    // create ArrayList of custom Location objects
-    private ArrayList<Location> locations = new ArrayList<>();
 
     // empty constructor
     public CultureFragment() {}
@@ -25,16 +23,20 @@ public class CultureFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        // create ArrayList of custom Location objects
+        // when declaring variable it is best practice to use the interface rather than the implementation of the interface
+        List<Location> locations = new ArrayList<>();
+
         // inflate GridView in location_grid
         View rootView = inflater.inflate(R.layout.location_grid, container, false);
 
         // add Location objects to the ArrayList
-        locations.add(new Location("Leon", "Leon Cathedral\nCerro Negro volcano\nMomotombo volcano", R.drawable.leon));
-        locations.add(new Location("Indio Maiz", "Biological Reserve\nRainforests\nHiking", R.drawable.indio_maiz));
-        locations.add(new Location("Granada Islets", "Monkey Island\nBoat rides\n365 islands of lush vegetation", R.drawable.monkey_island));
-        locations.add(new Location("Mi Museo", "Indigenous cermaics from 2000 BC\nArtwork", R.drawable.mi_museo));
-        locations.add(new Location("Miraflor", "National Park\nCloud forests\nOver 200 species of orchids", R.drawable.miraflor));
-        locations.add(new Location("Masaya", "National Artisan Market\nAsuncion Church\nMasaya volcano", R.drawable.national_market));
+        locations.add(new Location(getString(R.string.culture_leon_title), getString(R.string.culture_leon_description), R.drawable.leon));
+        locations.add(new Location(getString(R.string.culture_indio_title), getString(R.string.culture_indio_description), R.drawable.indio_maiz));
+        locations.add(new Location(getString(R.string.culture_granada_title), getString(R.string.culture_granada_description), R.drawable.monkey_island));
+        locations.add(new Location(getString(R.string.culture_museo_title), getString(R.string.culture_museo_description), R.drawable.mi_museo));
+        locations.add(new Location(getString(R.string.culture_miraflor_title), getString(R.string.culture_miraflor_description), R.drawable.miraflor));
+        locations.add(new Location(getString(R.string.culture_masaya_title), getString(R.string.culture_masaya_description), R.drawable.national_market));
 
         // create custom adapter that uses Location objects to populate and inflate grid_item layouts
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);

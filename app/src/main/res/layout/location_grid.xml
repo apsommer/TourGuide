@@ -6,6 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:drawSelectorOnTop="true"
-    android:paddingBottom="6dp" />
+    android:paddingBottom="@dimen/grid_item_padding" />
 
 

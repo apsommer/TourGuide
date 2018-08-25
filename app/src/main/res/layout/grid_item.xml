@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="6dp"
-    android:paddingStart="6dp"
-    android:paddingEnd="6dp" >
+    android:paddingTop="@dimen/grid_item_padding"
+    android:paddingStart="@dimen/grid_item_padding"
+    android:paddingEnd="@dimen/grid_item_padding" >
 
     <ImageView
         android:id="@+id/grid_image"
@@ -21,9 +21,9 @@
         android:id="@+id/grid_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
+        android:padding="@dimen/grid_item_text_padding"
         android:textColor="@color/black"
-        android:textSize="32sp"
+        android:textSize="@dimen/grid_item_title_textSize"
         android:background="@color/colorTransparent"
         tools:fontFamily="@font/adamina"
         tools:text="Title String" />
@@ -35,9 +35,9 @@
         android:layout_alignBottom="@id/grid_image"
         android:background="@color/colorTransparent"
         android:gravity="right"
-        android:padding="12sp"
+        android:padding="@dimen/grid_item_text_padding"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="@dimen/grid_item_description_textSize"
         android:textStyle="italic"
         tools:fontFamily="@font/adamina"
         tools:text="Description string\nWill have between two\nOr three rows" />

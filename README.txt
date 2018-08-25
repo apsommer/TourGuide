@@ -15,3 +15,10 @@ Creating your own custom classes
 Properly handling images or audio (if applicable)
 
 This project was created in Android Studio, and tested on a Sony E5823 running Android 7.1.1 (API 25).
+
+8/24/18
+***********
+
+Followed best practices when declaring the ArrayList variable. This variable in each fragment was moved from the class level to the onCreate() method and its access modifier removed. The List interface was used directly rather than its implementation, ArrayList.
+
+Strings and dimensions extracted to the appropriate XML files.

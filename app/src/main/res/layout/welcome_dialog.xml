@@ -5,16 +5,16 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="12dp"
-    android:layout_margin="12dp" >
+    android:padding="@dimen/dialog_padding"
+    android:layout_margin="@dimen/dialog_margin" >
 
     <TextView
         android:id="@+id/dialog_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
+        android:padding="@dimen/dialog_padding"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="@dimen/dialog_title_textSize"
         android:fontFamily="@font/adamina"
         android:gravity="center"
         android:text="@string/dialog_title" />
@@ -30,9 +30,9 @@
         android:id="@+id/dialog_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="12dp"
+        android:padding="@dimen/dialog_padding"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="@dimen/dialog_description_textSize"
         android:fontFamily="@font/adamina"
         android:gravity="center"
         android:text="@string/dialog_description" />

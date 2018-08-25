@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="tab_textSize">12sp</dimen>
+    <dimen name="grid_item_padding">6dp</dimen>
+    <dimen name="grid_item_text_padding">12dp</dimen>
+    <dimen name="grid_item_title_textSize">32sp</dimen>
+    <dimen name="grid_item_description_textSize">12sp</dimen>
+    <dimen name="dialog_padding">12dp</dimen>
+    <dimen name="dialog_margin">12dp</dimen>
+    <dimen name="dialog_title_textSize">16sp</dimen>
+    <dimen name="dialog_description_textSize">12sp</dimen>
+</resources>

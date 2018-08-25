@@ -10,14 +10,12 @@ import android.widget.GridView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple fragment subclass.
  */
 public class VolcanoesFragment extends Fragment {
-
-    // create ArrayList of Location objects
-    private ArrayList<Location> locations = new ArrayList<>();
 
     // empty constructor
     public VolcanoesFragment() {}
@@ -25,18 +23,22 @@ public class VolcanoesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
+        // create ArrayList of custom Location objects
+        // when declaring variable it is best practice to use the interface rather than the implementation of the interface
+        List<Location> locations = new ArrayList<>();
+
         // inflate GridView in location_grid
         View rootView = inflater.inflate(R.layout.location_grid, container, false);
 
         // add Location objects to the ArrayList
-        locations.add(new Location("Masaya", "Santiago crater\nBat caves", R.drawable.masaya_volcano));
-        locations.add(new Location("Apoyo", "Lagoon Natural Reserve\nSwimming\nKayaking", R.drawable.apoyo));
-        locations.add(new Location("San Cristobal", "Highest volcano in the country\nExpert hiking", R.drawable.cristobal));
-        locations.add(new Location("Cerro Negro", "Sand boarding\nHiking\nLeon nearby", R.drawable.cerro_negro));
-        locations.add(new Location("Concepcion", "Rock climbing\nTropical rainforests\nOmetepe Island", R.drawable.concepcion));
-        locations.add(new Location("Momotombo", "Old Leon ruins\nHiking", R.drawable.momotombo));
-        locations.add(new Location("Maderas", "Prehistoric petroglyphs\nCloud forests\nOmetepe Island", R.drawable.maderas));
-        locations.add(new Location("Mombacho", "Ziplines\nCloud forests\nDwarf forests", R.drawable.mombacho));
+        locations.add(new Location(getString(R.string.volcanoes_masaya_title), getString(R.string.volcanoes_masaya_description), R.drawable.masaya_volcano));
+        locations.add(new Location(getString(R.string.volcanoes_apoyo_title), getString(R.string.volcanoes_apoyo_description), R.drawable.apoyo));
+        locations.add(new Location(getString(R.string.volcanoes_cristobal_title), getString(R.string.volcanoes_cristobal_description), R.drawable.cristobal));
+        locations.add(new Location(getString(R.string.volcanoes_cerro_title), getString(R.string.volcanoes_cerro_description), R.drawable.cerro_negro));
+        locations.add(new Location(getString(R.string.volcanoes_concepcion_title), getString(R.string.volcanoes_concepcion_description), R.drawable.concepcion));
+        locations.add(new Location(getString(R.string.volcanoes_momotombo_title), getString(R.string.volcanoes_momotombo_description), R.drawable.momotombo));
+        locations.add(new Location(getString(R.string.volcanoes_maderas_title), getString(R.string.volcanoes_maderas_description), R.drawable.maderas));
+        locations.add(new Location(getString(R.string.volcanoes_mombacho_title), getString(R.string.volcanoes_mombacho_description), R.drawable.mombacho));
 
         // create custom adapter that uses Location objects to populate and inflate grid_item layouts
         LocationAdapter adapter = new LocationAdapter(getActivity(), locations);

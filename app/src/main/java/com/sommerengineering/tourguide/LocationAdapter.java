@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Provides the appropriate inflated grid_item layout to the GridView in location_grid layout
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 public class LocationAdapter extends ArrayAdapter<Location> {
 
     // constructor
-    public LocationAdapter(Context context, ArrayList<Location> locations) {
+    public LocationAdapter(Context context, List<Location> locations) {
 
         // call superclass ArrayAdapter constructor
         // second argument for populating a single TextView (the default for ArrayAdapter)
