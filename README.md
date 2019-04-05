@@ -1,6 +1,6 @@
 ### Nicaragua - The land of lakes and volcanoes.
 
-This is a Tour Guide App which presents relevant information to a user who’s visiting the country of Nicaragua. The app lists regions, culture, volcanoes, and surfing locations. It contains all the best known secrets that only locals know. Pictures and information are provided for item, in each category.
+This is a Tour Guide App which presents relevant information to a user who’s visiting the country of Nicaragua. The app lists regions, culture, volcanoes, and surfing locations. It contains all the best known secrets that only locals know. Pictures and information are provided for each item, in each category.
 
 #### Skills Demonstrated
 
