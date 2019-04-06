@@ -16,4 +16,3 @@ This project was created in Android Studio, and tested on a Sony E5823 running A
 #### ![](demo/phone_port_1.png)
 #### ![](demo/phone_port_2.png)
 #### ![](demo/phone_port_3.png)
-#### ![](demo/phone_port_4.png)
