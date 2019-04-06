@@ -1,4 +1,4 @@
-### Nicaragua - The land of lakes and volcanoes.
+## Nicaragua - The land of lakes and volcanoes.
 
 This is a Tour Guide App which presents relevant information to a user who’s visiting the country of Nicaragua. The app lists regions, culture, volcanoes, and surfing locations. It contains all the best known secrets that only locals know. Pictures and information are provided for each item, in each category.
 
@@ -12,3 +12,8 @@ This is a Tour Guide App which presents relevant information to a user who’s v
 - Properly handling images or audio (if applicable)
 
 This project was created in Android Studio, and tested on a Sony E5823 running Android 7.1.1 (API 25).
+
+#### ![](demo/phone_port_1.png)
+#### ![](demo/phone_port_2.png)
+#### ![](demo/phone_port_3.png)
+#### ![](demo/phone_port_4.png)
