@@ -11,8 +11,6 @@ This is a Tour Guide App which presents relevant information to a user who’s v
 - Creating your own custom classes
 - Properly handling images or audio (if applicable)
 
-This project was created in Android Studio, and tested on a Sony E5823 running Android 7.1.1 (API 25).
-
 #### ![](demo/phone_port_1.png)
 #### ![](demo/phone_port_2.png)
 #### ![](demo/phone_port_3.png)
